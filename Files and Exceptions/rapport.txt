@@ -1,0 +1,4 @@
+ Meilleure note : 20
+ Pire note : 3
+ Somme des notes : 60
+ Moyenne : 12.00

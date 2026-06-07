@@ -1,0 +1,13 @@
+16
+9
+20
+18
+4
+13
+17
+14
+1
+19 
+----Resume----
+ La somme de notes est : 131
+ La moyenne est : 13.10

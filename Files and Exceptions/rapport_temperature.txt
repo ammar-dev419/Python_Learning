@@ -1,0 +1,3 @@
+ La temperature la plus elevee est :50
+ La temperature la plus basse est : -23
+ La moyenne du temperature est : 10.86

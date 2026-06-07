@@ -1,0 +1,3 @@
+ Le nombre de mots est : 10
+ Longueur du mot le plus long est : 10
+ Longueur du mot le plus court est : 3

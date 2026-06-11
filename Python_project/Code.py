@@ -1,9 +1,10 @@
 import json
-students = [
-    {"Nom": "Ammar", "Note": 19},
-    {"Nom": "Ahmed", "Note": 14},
-    {"Nom": "yasir", "Note": 9}
-]
+try:
+    with open("students.json", "r") as file:
+        students = json.load(file)
+except FileNotFoundError:
+    print("Le fichier n'existe pas dans ce dossier.")
+    students = []
 
 def save_students():
     with open("students.json", "w") as file:

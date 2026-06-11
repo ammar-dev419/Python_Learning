@@ -79,6 +79,25 @@ def amendment():
     if not found:
         print("L'etudiant n'exuste pas.")
 
+def statistiques():
+    m_n = 0
+    p_n = 20
+    n_e = len(students)
+    for student in students:
+        if student["Note"] >= m_n:
+            m_n = student["Note"]
+
+        if student["Note"] <= p_n:
+            p_n = student["Note"]
+    total = 0
+    for student in students:
+       total += student["Note"]
+    moyenne = total / len(students)
+    print(f"Nombre d'etudiant : {n_e}")
+    print(f"Meilleure note : {m_n}")
+    print(f"Pire note : {p_n}")
+    print(f"Moyenne : {moyenne}")
+
 
 while True:
     print("1. Ajouter")
@@ -87,7 +106,8 @@ while True:
     print("4. Afficher")
     print("5. Moyenne")
     print("6. Amendement")
-    print("7. Quitter\n")
+    print("7. Statistiques")
+    print("8. Quitter\n")
     command_list = str(input("Choisissez votre commande: "))
 
     if command_list == "1":
@@ -109,4 +129,7 @@ while True:
         amendment()
 
     elif command_list == "7":
+        statistiques()
+
+    elif command_list == "8":
         break

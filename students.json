@@ -1,1 +1,18 @@
-[{"Nom": "Yassine", "Note": 17.0}, {"Nom": "Ahmed", "Note": 18.0}]
+[
+    {
+        "Nom": "Ammar",
+        "Note": 18.0
+    },
+    {
+        "Nom": "Yassine",
+        "Note": 19.0
+    },
+    {
+        "Nom": "Ahmed",
+        "Note": 16.0
+    },
+    {
+        "Nom": "Yasir",
+        "Note": 17.0
+    }
+]

@@ -1,9 +1,13 @@
 import json
-try:
-    with open("students.json", "r") as file:
-        students = json.load(file)
-except (FileNotFoundError, json.JSONDecodeError):
-    students = []
+students = []
+
+def load_students():
+    global students
+    try:
+        with open("students.json", "r") as file:
+            students = json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        students = []
 
 def save_students():
     with open("students.json", "w") as file:
@@ -119,42 +123,3 @@ def statistiques():
     print(f"Meilleure note : {m_e} ===> {m_n}")
     print(f"Pire note : {p_e} ===> {p_n}")
     print(f"Moyenne : {moyenne}")
-
-
-while True:
-    print("1. Ajouter")
-    print("2. Supprimer")
-    print("3. Rechercher")
-    print("4. Afficher")
-    print("5. Moyenne")
-    print("6. Amendement")
-    print("7. Statistiques")
-    print("8. Quitter\n")
-    command_list = str(input("Choisissez votre commande: "))
-
-    if command_list == "1":
-        ajouter()
-    
-    elif command_list == "2":
-        supprimer()
-    
-    elif command_list == "3":
-        rechercher()
-    
-    elif command_list == "4":
-        afficher()
-    
-    elif command_list == "5":
-        moyenne()
-
-    elif command_list == "6":
-        amendment()
-
-    elif command_list == "7":
-        statistiques()
-
-    elif command_list == "8":
-        break
-
-    else:
-        print("Commande invalide.")

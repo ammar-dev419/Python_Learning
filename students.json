@@ -1,22 +1,14 @@
 [
     {
-        "Nom": "Ammar",
-        "Note": 18.0
-    },
-    {
-        "Nom": "Yassine",
-        "Note": 19.0
-    },
-    {
-        "Nom": "Ahmed",
+        "Nom": "Ammar ",
         "Note": 16.0
     },
     {
-        "Nom": "Yasir",
-        "Note": 17.0
+        "Nom": "Yassine",
+        "Note": 10.0
     },
     {
-        "Nom": "Rayan",
-        "Note": 17.0
+        "Nom": "Assem",
+        "Note": 18.0
     }
 ]
